@@ -56,6 +56,7 @@
     self.amountForEachPersonLabel.text = [NSString stringWithFormat:@"Total for each person is: $%@", self.totalBillAmount];
 }
 
+
 - (IBAction)sliderMoved:(UISlider *)sender {
     
     //sender.value sends current value(float)

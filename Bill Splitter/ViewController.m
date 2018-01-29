@@ -30,14 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //sender.value sends current value(float)
-    //then i convert it to NSNumber (idk how to convert directly from float to NSDecimal number)
-    NSNumber *currentSliderValue = [[NSDecimalNumber alloc] initWithInteger: self.numberOfPerson.value];
-    
-    //converting currentSliderValue into NSDecimal to be used for calculations
-    NSDecimalNumber *convertedCurrentSliderValue = [NSDecimalNumber decimalNumberWithDecimal:currentSliderValue.decimalValue];
-    self.sliderValue = convertedCurrentSliderValue;
 
 }
 
@@ -81,7 +73,7 @@
     //self.numberOfPerson.value has value in float that i want to convert to NSDecimalNumber
     //convert the current slider value to NSNumber (idk how to convert directly from float to NSDecimal number)
     NSNumber *currentSliderValue = [[NSDecimalNumber alloc] initWithInteger: self.numberOfPerson.value];
-    
+
     //converting currentSliderValue into NSDecimal to be used for calculations
     NSDecimalNumber *convertedCurrentSliderValue = [NSDecimalNumber decimalNumberWithDecimal:currentSliderValue.decimalValue];
     self.sliderValue = convertedCurrentSliderValue;
